@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+	<base href="https://cs.unibuc.ro/~pirofti/" />
+	<title>Paul Irofti | Analiză Statică</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="description" content="Analiză Statică" />
+	<meta name="keywords" content="research,teaching,university
+	    dictionary learning,sparse representations,
+	    operating systems,security,
+	    development,software,hardware,kernel,bsd,irofti,paul,c,
+	    ruby,lisp,unix,shell,script,voip,security" />
+</head>
+
+<body style="font-family: monospace">
+
+<div style="float:left; margin-top:50px">
+	<a style="text-decoration: none; font-size: x-large" href="index.html">
+	    <b>Paul Irofti</b></a><br/><br/><br/>
+	<big><b>About me:</b></big>&nbsp;<br/>
+	&nbsp;<a href="resume/paul-irofti-cv-en.pdf">Resume</a>
+	(<a href="resume/paul-irofti-cv-ro.pdf">RO</a>)<br/>
+	&nbsp;<a href="publications.html">Publications</a><br/>
+	&nbsp;<a href="education.html">Education</a><br/>
+	&nbsp;<a href="secsem.html">Security Seminar</a><br/>
+	&nbsp;<a href="https://orcid.org/0000-0002-7541-4334" target="_blank">ORCID</a><br/>
+	&nbsp;<a href="https://scholar.google.ro/citations?user=yJZpIfgAAAAJ" target="_blank">Scholar</a><br/>
+	&nbsp;<a href="http://ro.linkedin.com/in/paulirofti" target="_blank">LinkedIn</a><br/>
+	&nbsp;<a href="https://github.com/pirofti" target="_blank">GitHub</a><br/>
+	<p/> <big><b>Teaching:</b></big>&nbsp;<br/>
+	&nbsp;<a href="so.html">Sisteme de Operare</a><br/>
+	&nbsp;<a href="uso.html">Utilizarea SO</a><br/>
+	&nbsp;<a href="sso.html">Securitate SO</a><br/>
+	&nbsp;<a href="va.html">Vedere Artificială</a><br/>
+	&nbsp;Analiza Statică<br/>
+	<p/> <big><b>Contact:</b></big>&nbsp;<br/>
+	&nbsp;<img src="images/email.png" alt="[E-mail address]" /><br/>
+</div>
+
+<div style="float:left; border-left: 5px solid black; vertical-align: top;
+    margin-left: 30px; margin-top: 50px; width: 700px">
+
+<p style="margin-left: 20px; font-size: x-large;"/>
+<b>Analiza Statică</b></br>
+
+<p style="margin-left: 20px"/>
+Informații despre modul de desfășurare a cursului găsiți în
+<a href="stls/C0-Intro.pdf">primul set de diapozitive</a>.
+
+<p style="margin-left: 20px"/>
+Cursul are trei părţi:
+
+<p style="margin-left: 20px"/>
+<ol style="list-style-type: upper-roman;">
+<li>Specificarea şi analiza protocoalelor de securitate.</li>
+<li>Analiză statică.</li>
+<li>Metode de învătare automata pentru securitate.</li>
+</ol>
+
+<p style="margin-left: 20px"/>
+Prima parte va fi predată de
+<a href="https://cs.unibuc.ro/~ileustean/TSLS.html">Ioana Leuștean</a>.</br>
+Partea a treia va fi predata de
+<a href="https://ro.linkedin.com/in/elena-burceanu-97016539">Elena Burceanu (Bitdefender)</a>.</br>
+
+<p style="margin-left: 20px; font-size: large"/>
+<b>Cursuri</b></br>
+
+<p style="margin-left: 20px"/>
+La curs vom lucra în principal la tablă, dar vom merge în paralel cu
+următoarele diapozitive.
+
+<p style="margin-left: 20px"/>
+<ol>
+<li><a href="stls/C06-CFG.pdf">Analiza fluxului de date</a></li>
+<li><a href="stls/C07-ValRange.pdf">Analiza variabilelor și adreselor de memorie</a></li>
+<li><a href="stls/C08-AbstractDomains.pdf">Domenii abstracte</a></li>
+<li><a href="stls/C09-DomainInteraction.pdf">Interacțiunea inter-domenii</a></li>
+</ol>
+
+<p style="margin-left: 20px; font-size: large"/>
+<b>Laborator</b></br>
+
+<p style="margin-left: 20px"/>
+La partea de laborator va trebui să implementați și analizați programe simple C
+folosind următoarele produse de analiză statică.
+
+<p style="margin-left: 20px"/>
+<ol>
+<li><a href="https://frama-c.com/">Frama-C</a></li>
+<li><a href="https://clang-analyzer.llvm.org/">LLVM static analysis tools</a></li>
+<li><a href="https://www.gnu.org/software/cflow/">cflow</a></li>
+</ol>
+
+<p style="margin-left: 20px; font-size: large"/>
+<b>Bibliografie</b></br>
+
+<p style="margin-left: 20px"/>
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="spa">1</a>]
+</td>
+<td class="bibtexitem">
+A.&nbsp;Møller and M.I.&nbsp;Schwartzbach,
+ <em>Static Program Analysis</em>,
+ Department of Computer Science, Aarhus, 2018.
+[&nbsp;<a href="https://cs.au.dk/~amoeller/spa/">HTML</a>&nbsp;| 
+<a href="https://cs.au.dk/~amoeller/spa/spa.pdf">PDF</a>&nbsp;]
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="valrange">2</a>]
+</td>
+<td class="bibtexitem">
+A.&nbsp;Simon,
+ <em>Value-Range Analysis of C Programs: Towards Proving the Absence of Buffer
+	 Overflow Vulnerabilities</em>,
+ Springer, 2010.
+[&nbsp;<a href="https://www.springer.com/gp/book/9781848000162">HTML</a>&nbsp;]
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
