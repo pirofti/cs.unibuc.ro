@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+	<base href="https://cs.unibuc.ro/~pirofti/" />
+	<title>Paul Irofti | OS: Design and Security</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="description" content="operating systems" />
+	<meta name="keywords" content="research,teaching,university
+	    dictionary learning,sparse representations,
+	    operating systems,security,design,
+	    development,software,hardware,kernel,bsd,irofti,paul,c,
+	    ruby,lisp,unix,shell,script,voip,security" />
+</head>
+
+<body style="font-family: monospace">
+
+<div style="float:left; margin-top:50px">
+	<a style="text-decoration: none; font-size: x-large" href="index.html">
+	    <b>Paul Irofti</b></a><br/><br/><br/>
+	<big><b>About me:</b></big>&nbsp;<br/>
+	&nbsp;<a href="resume/paul-irofti-cv-en.pdf">Resume</a>
+	(<a href="resume/paul-irofti-cv-ro.pdf">RO</a>)<br/>
+	&nbsp;<a href="publications.html">Publications</a><br/>
+	&nbsp;<a href="education.html">Education</a><br/>
+	&nbsp;<a href="secsem.html">Security Seminar</a><br/>
+	&nbsp;<a href="https://orcid.org/0000-0002-7541-4334" target="_blank">ORCID</a><br/>
+	&nbsp;<a href="https://scholar.google.ro/citations?user=yJZpIfgAAAAJ" target="_blank">Scholar</a><br/>
+	&nbsp;<a href="http://ro.linkedin.com/in/paulirofti" target="_blank">LinkedIn</a><br/>
+	&nbsp;<a href="https://github.com/pirofti" target="_blank">GitHub</a><br/>
+	<p/> <big><b>Grants:</b></big>&nbsp;<br/>
+	&nbsp;<a href="ddnet.html">DDNET</a><br/>
+	&nbsp;<a href="graphomaly.html">Graphomaly</a><br/>
+	<p/> <big><b>Teaching:</b></big>&nbsp;<br/>
+	&nbsp;<a href="so.html">Sisteme de Operare</a><br/>
+	&nbsp;<a href="uso.html">Utilizarea SO</a><br/>
+	&nbsp;OS Security<br/>
+	&nbsp;<a href="va.html">Vedere Artificială</a><br/>
+	&nbsp;<a href="stls.html">Analiza Statică</a><br/>
+	&nbsp;<a href="ps.html">Procesarea Semnalelor</a><br/>
+	<p/> <big><b>Contact:</b></big>&nbsp;<br/>
+	&nbsp;<img src="images/email.png" alt="[E-mail address]" /><br/>
+</div>
+
+<div style="float:left; border-left: 5px solid black; vertical-align: top;
+    margin-left: 30px; margin-top: 50px; width: 700px">
+
+<p style="margin-left: 20px; font-size: x-large;"/>
+<b>Operating Systems: Design and Security</b></br>
+
+<p style="margin-left: 20px"/>
+The course is based on a series of research papers and projects
+focused on the design and security of operating systems.
+Students will review the referenced papers before class
+such that they can be discussed and expanded upon during class.
+Lab work will involve applying the concepts tought at during course
+in order to implement various practical tasks.
+
+<!--p style="margin-left: 20px; font-size: large"/>
+<b>Restanță</b></br>
+<p style="margin-left: 20px"/>
+Cei de anul II cu restanță la SOPS vor da pe 4 iunie la ora 12:00 restanța
+împreună cu cei de la licență. Materia este aceiași ca anul trecut și o regăsiți
+<a href="https://cs.unibuc.ro/~pirofti/so.html">aici</a>.
+Proba de examen se va desfășura sub forma unui
+Quiz pe Moodle ce va fi disponibil
+<a href="https://moodle.fmi.unibuc.ro/course/view.php?id=778">aici</a-->.
+
+<p style="margin-left: 20px; font-size: large"/>
+<b>Course materials</b></br>
+
+<p style="margin-left: 20px"/>
+During course we will mainly work at the whiteboard supported by
+the following materials and slides.
+The papers that need to be prepared by students in advance are marked
+accordingly or announced in class a week in advance.
+
+<p style="margin-left: 20px"/>
+<ol>
+<li><a href="http://codex.cs.yale.edu/avi/os-book/OS10/">Recapitulation</a>:
+	processes, paging, segmentation.</li>
+<li><a href="https://codex.cs.yale.edu/avi/os-book/OS10/slide-dir/index.html">Virtual machines</a></li>
+<li>Timing attacks
+
+<p style="margin-left: 20px"/>
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="valrange">1</a>]
+</td>
+<td class="bibtexitem">
+Kocher, Paul C.
+<em>Timing Attacks on Implementations of Die-Hellman, RSA, DSS, and Other Systems</em>,
+Advances in Cryptology| Crypto. Vol. 96. 1996.
+[&nbsp;<a href="https://www.paulkocher.com/TimingAttacks.pdf">PDF</a>&nbsp;]
+</td>
+</tr>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="spa">2</a>]
+</td>
+<td class="bibtexitem">
+Brumley, Billy Bob, and Nicola Tuveri
+<em>Remote timing attacks are still practical</em>,
+European Symposium on Research in Computer Security. Springer, Berlin,
+Heidelberg, 2011.
+[&nbsp;<a href="https://crypto.stanford.edu/~dabo/papers/ssl-timing.pdf">PDF</a>&nbsp;]
+</td>
+</tr>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="spa">3</a>]
+</td>
+<td class="bibtexitem">
+Percival, Colin
+<em>Cache missing for fun and profit</em>,
+1-13, 2005.
+[&nbsp;<a href="http://www.daemonology.net/papers/htt.pdf">PDF</a>&nbsp;]
+</td>
+</tr>
+
+</table>
+</li>
+
+<li>Cache attacks
+<p style="margin-left: 20px"/>
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="valrange">1</a>]
+</td>
+<td class="bibtexitem">
+Lipp, Moritz, et al
+<em>Meltdown</em>,
+arXiv preprint arXiv:1801.01207 (2018)
+[&nbsp;<a href="https://arxiv.org/pdf/1801.01207">PDF</a>&nbsp;]
+</td>
+</tr>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="valrange">2</a>]
+</td>
+<td class="bibtexitem">
+Mark D. Hill
+<em>On the Meltdown & Spectre Design Flaws</em>,
+Presentation (2018)
+[&nbsp;<a href="https://research.cs.wisc.edu/multifacet/papers/hill_mark_wisconsin_meltdown_spectre.pdf">PDF</a>&nbsp;]
+</td>
+</tr>
+
+</table>
+</li>
+
+<li>Cache attacks (2)
+<p style="margin-left: 20px"/>
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="valrange">1</a>]
+</td>
+<td class="bibtexitem">
+Kocher, Paul, et al.
+<em>Spectre attacks: Exploiting speculative execution.</em>,
+2019 IEEE Symposium on Security and Privacy (SP). IEEE, 2019
+[&nbsp;<a href="https://arxiv.org/pdf/1801.01203.pdf">PDF</a>&nbsp;]
+</td>
+</tr>
+
+</table>
+</li>
+
+<li>Rowhammer attacks
+<p style="margin-left: 20px"/>
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="valrange">1</a>]
+</td>
+<td class="bibtexitem">
+Kim, Yoongu, et al.
+<em>Flipping bits in memory without accessing them:
+An experimental study of DRAM disturbance errors.</em>,
+ACM SIGARCH Computer Architecture News 42.3 (2014): 361-372.
+[&nbsp;<a href="https://users.ece.cmu.edu/~yoonguk/papers/kim-isca14.pdf">PDF</a>&nbsp;]
+</td>
+</tr>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="valrange">2</a>]
+</td>
+<td class="bibtexitem">
+Gruss, Daniel, Clementine Maurice, and Stefan Mangard.
+<em>Rowhammer. js: A remote software-induced fault attack in javascript.</em>
+International conference on detection of intrusions and malware, and vulnerability assessment. Springer, Cham, 2016.
+[&nbsp;<a href="https://arxiv.org/pdf/1507.06955.pdf">PDF</a>&nbsp;]
+</td>
+</tr>
+
+</table>
+</li>
+
+<li>Statistical clock drivers
+<p style="margin-left: 20px"/>
+
+AMD Geode CS5536 multi-function general purpose timer.
+[&nbsp;<a href="https://man.openbsd.org/glxclk">manpage</a>&nbsp;|&nbsp;<a href="https://github.com/openbsd/src/blob/master/sys/arch/loongson/dev/glxclk.c">source</a>&nbsp;]
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="valrange">1</a>]
+</td>
+<td class="bibtexitem">
+McCanne, Steven, and Chris Torek
+<em>A Randomized Sampling Clock for CPU Utilization Estimation
+	and Code Profiling.</em>,
+USENIX Winter. 1993.
+[&nbsp;<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.50.3208&rep=rep1&type=pdf">PDF</a>&nbsp;]
+</td>
+</tr>
+
+</table>
+</li>
+
+<li>SELinux (<b><a href="http://lacl.fr/dima/">Prof. Cătălin Dima</a></b>)
+<p style="margin-left: 20px"/>
+
+SELinux course page is <a href="http://lacl.fr/dima/selinux/">here</a>.
+
+<ul>
+ <li> Course 1:
+      <a href="http://lacl.fr/dima/selinux/selinux1.pdf">MEVS – SELinux</a>
+ </li>
+ <li> Course 2:
+      <a href="http://lacl.fr/dima/selinux/selinux2.pdf">MEDI/MEPO – SELinux</a>
+ </li>
+</ul>
+
+</li>
+
+<li>Buffer Overflow
+<p style="margin-left: 20px"/>
+
+</li>
+
+<li>Return-to-libc Attacks
+<p style="margin-left: 20px"/>
+
+</li>
+
+<li>Address Space Layout Randomization
+<p style="margin-left: 20px"/>
+
+</li>
+
+<li>Return Orientated Programming
+<p style="margin-left: 20px"/>
+
+</li>
+
+<li>Functional Correctness and Security Proofs: seL4 and Genode
+<p style="margin-left: 20px"/>
+
+</li>
+
+</ol>
+
+<p style="margin-left: 20px; font-size: large"/>
+<b>Laboratory classes</b></br>
+
+<p style="margin-left: 20px"/>
+Labs 3 and 4 contain an
+<a href="https://en.wikipedia.org/wiki/EICAR_test_file">EICAR</a>
+which is why the archives are password protected with "parola".
+
+<p style="margin-left: 20px"/>
+<ol>
+<li><a href="sops/sops-lab-1.pdf">Processes and threads</a></li>
+<li><a href="sops/sops-lab-2.zip">Synchronization and communication</a></li>
+<li><a href="sops/sops-lab-3.zip">The Linux module inotify</a></li>
+<li><a href="sops/sops-lab-4.zip">Windows Driver -- mini-filter</a></li>
+<li>SELinux (<b><a href="http://lacl.fr/dima/">Prof. Cătălin Dima</a></b>)
+<ul>
+ <li><a href="http://lacl.fr/dima/selinux/tp1.pdf">Lab 1</a></li>
+ <li><a href="http://lacl.fr/dima/selinux/tp2.pdf">Lab 2</a></li>
+</ul>
+</li>
+<li><a href="sops/sops-lab-6.pdf">Buffer overflow and ASLR</a></li>
+<li><a href="sops/sops-lab-7.pdf">Return Oriented Programming</a></li>
+</ol>
+
+<p style="margin-left: 20px; font-size: large"/>
+<b>Examination</b></br>
+<p style="margin-left: 20px"/>
+Subjects list for the final paper is
+<a href="sops/sops-lista-teme.pdf">here</a>.
+
+<p style="margin-left: 20px"/>
+<b>Elaboration.</b>
+4 pages double-columned paper elaborated in teams of maxium 3 students.
+Paper LaTeX template can be found
+<a href="https://www.overleaf.com/latex/templates/template-for-operating-systems-design-and-security-course-at-university-of-bucharest/pyjwzrtzsbvk">here</a>.
+
+<p style="margin-left: 20px"/>
+<b>Submitting the paper.</b>
+One team member is designated the corresponding author.
+The corresponding author will cerate a student account
+<a href="https://www.turnitin.com/newuser_type.asp?lang=ro_ro">here</a>
+using the course ID 24781579 with key ArtSops2020
+where she will upload the paper.
+
+</body>
+</html>
