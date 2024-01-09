@@ -145,15 +145,21 @@ The papers that need to be prepared by students in advance are marked
 accordingly or announced in class a week in advance.
 
 <p style="margin-left: 20px"/>
+<b>Module 0: Operating System Design</a></b>
 <ol>
 <li><a href="http://codex.cs.yale.edu/avi/os-book/OS10/">Recapitulation</a>:
 	processes, paging, segmentation.</li>
 <li><a href="https://codex.cs.yale.edu/avi/os-book/OS10/slide-dir/index.html">Virtual machines</a></li>
 
-<li>Buffer Overflow
+</ol>
+
+<p style="margin-left: 20px"/>
+<b>Module I: <a href="osds/osds-course-10.pdf">Buffer Overflow Attacks</a></b>
+<ol start="3">
+<li>Buffer Overflow (<a href="osds/osds-course-10.pdf">Module Overflow</a>)
 <p style="margin-left: 20px"/>
 
-<a href="osds/osds-course-10.pdf">Buffer Overflow</a></li>
+
 
 <table>
 
@@ -162,7 +168,7 @@ accordingly or announced in class a week in advance.
 [<a name="valrange">1</a>]
 </td>
 <td class="bibtexitem">
-One, Aleph
+Aleph One (Elias Levy)
 <em>Smashing the stack for fun and profit.</em>,
 Phrack magazine 7.49 (1996): 14-16
 [&nbsp;<a href="https://www.cis.upenn.edu/~sga001/classes/cis331f19/resources/stack-smashing.pdf">PDF</a>&nbsp;]
@@ -176,6 +182,45 @@ Phrack magazine 7.49 (1996): 14-16
 <li>Return-to-libc Attacks
 <p style="margin-left: 20px"/>
 
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="valrange">1</a>]
+</td>
+<td class="bibtexitem">
+Solar Designer (Alexander Peslyak) 
+<em>Getting around non-executable stack (and fix)</em>,
+Bugtraq, 1997
+[&nbsp;<a href="https://seclists.org/bugtraq/1997/Aug/63">HTML</a>&nbsp;]
+</td>
+</tr>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="valrange">2</a>]
+</td>
+<td class="bibtexitem">
+c0ntext
+<em>Bypassing non-executable-stack during exploitation using return-to-libc</em>,
+[&nbsp;<a href="https://css.csail.mit.edu/6.858/2014/readings/return-to-libc.pdf">HTML</a>&nbsp;]
+</td>
+</tr>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="valrange">3</a>]
+</td>
+<td class="bibtexitem">
+David Wheeler
+<em>Secure programmer: Countering buffer overflows</em>,
+IBM DeveloperWorks, 2004
+[&nbsp;<a href="https://web.archive.org/web/20131018001904/http://www.ibm.com/developerworks/library/l-sp4/index.html">HTML</a>&nbsp;]
+</td>
+</tr>
+
+</table>
+
 </li>
 
 <li>Address Space Layout Randomization
@@ -183,11 +228,46 @@ Phrack magazine 7.49 (1996): 14-16
 
 </li>
 
-<li>Return Orientated Programming
+<li>Return Oriented Programming
 <p style="margin-left: 20px"/>
 
-</li>
+<table>
 
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="valrange">1</a>]
+</td>
+<td class="bibtexitem">
+Shacham, Hovav
+<em>The geometry of innocent flesh on the bone:
+    Return-into-libc without function calls (on the x86)</em>,
+Proceedings of the 14th ACM conference on Computer and communications security. 2007
+[&nbsp;<a href="https://dl.acm.org/doi/pdf/10.1145/1315245.1315313">PDF</a>&nbsp;]
+</td>
+</tr>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="valrange">2</a>]
+</td>
+<td class="bibtexitem">
+Mortimer, Todd
+<em>Removing ROP gadgets from OpenBSD</em>,
+Proc. of the AsiaBSDCon (2019): 13-21
+[&nbsp;<a href="https://www.openbsd.org/papers/asiabsdcon2019-rop-paper.pdf">PDF</a>&nbsp;
+|&nbsp;<a href="https://www.openbsd.org/papers/asiabsdcon2019-rop-slides.pdf">Slides</a>&nbsp;]
+</td>
+</tr>
+
+</table>
+
+</li>
+</ol>
+
+<p style="margin-left: 20px"/>
+<b>Module II: Hardware Speculative Attacks</a></b>
+
+<ol start="7">
 <li>Timing attacks
 
 <p style="margin-left: 20px"/>
@@ -234,7 +314,7 @@ Percival, Colin
 </table>
 </li>
 
-<li>Cache attacks
+<li>Cache attacks: Meltdown
 <p style="margin-left: 20px"/>
 
 <table>
@@ -266,7 +346,7 @@ Presentation (2018)
 </table>
 </li>
 
-<li>Cache attacks (2)
+<li>Cache attacks: Spectre
 <p style="margin-left: 20px"/>
 
 <table>
@@ -330,7 +410,12 @@ International conference on detection of intrusions and malware, and vulnerabili
 
 </table>
 </li>
+</ol>
 
+<p style="margin-left: 20px"/>
+<b>Module 0: Operating System Design (continuation)</a></b>
+
+<ol start="11">
 <li>Statistical clock drivers
 <p style="margin-left: 20px"/>
 
